@@ -299,7 +299,7 @@ function aWaitingLoadLibrarys() {
 
 ## Call native function directly
 
-```
+```js
 // frida  -U -f  id.aimardcr.insecure_jni -l solve.js
 
 Java.perform(function () {
