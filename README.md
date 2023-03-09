@@ -368,3 +368,7 @@ function aWaitingLoadLibrarys() {
     })
 }
 ```
+
+## ARM strace
+
+https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/arm/strace
