@@ -17,6 +17,25 @@ strace -p <PID>
 cat /proc/<pid>/maps  | grep blabla.so
 ```
 
+## Inspect address 
+
+```js
+
+// @ts-ignore
+function print_arg(addr) {
+    try {
+        console.log("asfasfas")
+        console.log(addr)
+        var module = Process.findRangeByAddress(addr);
+        if (module != null) return "\n"+hexdump(addr) + "\n" + ptr(addr).readCString();  + "\n";
+        return ptr(addr) + "\n";
+    } catch (e) {
+        console.log(e)
+        return addr + "\n";
+    }
+}
+```
+
 
 
 ## Good tools cheatsheet
