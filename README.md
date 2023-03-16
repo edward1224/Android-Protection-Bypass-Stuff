@@ -7,6 +7,12 @@ Android Protection Bypass Stuff that I compiled from few resources.
 pidof com.alfan.apps
 ```
 
+## Get strace
+```
+strace -p <PID>
+```
+
+
 ## Good tools cheatsheet
 
 Good cheatsheet compilation for mobile pentest
