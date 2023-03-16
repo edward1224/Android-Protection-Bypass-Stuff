@@ -1,6 +1,12 @@
 # Android Protection Bypass Stuff
 Android Protection Bypass Stuff that I compiled from few resources.
 
+## Get application pid
+
+```
+pidof com.alfan.apps
+```
+
 ## Good tools cheatsheet
 
 Good cheatsheet compilation for mobile pentest
