@@ -12,6 +12,12 @@ pidof com.alfan.apps
 strace -p <PID>
 ```
 
+## Get mapping
+```
+cat /proc/<pid>/maps  | grep blabla.so
+```
+
+
 
 ## Good tools cheatsheet
 
@@ -430,3 +436,4 @@ Interceptor.attach(unlink, {
 ```
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 ```
+
