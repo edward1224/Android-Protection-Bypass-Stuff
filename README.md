@@ -394,3 +394,21 @@ function hexPatch(base, addr, hex) {
     })
 }
 ```
+
+## Hook file deletion
+
+```js
+// Find the unlink function
+const unlink = new NativeFunction(Module.findExportByName(null, 'unlink'), 'int', ['pointer']);
+
+// Hook the unlink function
+Interceptor.attach(unlink, {
+  onEnter: function(args) {
+    // Get the path of the file being deleted
+    const path = Memory.readUtf8String(args[0]);
+    
+    // Log the file path before it is deleted
+    console.log(`Deleting file: ${path}`);
+  }
+});
+```
