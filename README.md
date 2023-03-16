@@ -372,3 +372,25 @@ function aWaitingLoadLibrarys() {
 ## ARM strace
 
 https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/arm/strace
+
+## Patch memory
+
+```js
+function Hex2Bytes(hex) {
+    hex = hex.replaceAll(" ", "")
+    let bytes = [];
+    for (let c = 0; c < hex.length; c += 2) {
+        bytes.push(parseInt(hex.substr(c, 2), 16));
+    }
+    return bytes;
+}
+
+function hexPatch(base, addr, hex) {
+    let target = ptr(base).add(addr)
+    let data = Hex2Bytes(hex)
+    Memory.patchCode(target,data.length, function (vfn) {
+       Memory.writeByteArray(target, data);
+       console.log("Patched "+data.length+" bytes on "+target);
+    })
+}
+```
