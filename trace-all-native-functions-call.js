@@ -1,5 +1,3 @@
-// frida  -U -f  com.apps -l solve.js
-var library_name = "libfan.so"
 
 Java.perform(function () {
     aWaitingLoadLibrarys();
@@ -17,6 +15,8 @@ function print_arg(addr) {
         return addr + "\n";
     }
 }
+var library_name = "libfan.so"
+
 function aWaitingLoadLibrarys() {
 
     var library_loaded = 0
