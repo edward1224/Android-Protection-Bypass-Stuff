@@ -459,3 +459,7 @@ Interceptor.attach(unlink, {
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 ```
 
+## Tools
+
+- https://github.com/lasting-yang/frida_hook_libart
+
