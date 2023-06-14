@@ -4,6 +4,48 @@ Android Protection Bypass Stuff that I compiled from few resources.
 ## References 
 [JNI Struct Table](https://docs.google.com/spreadsheets/d/1yqjFaY7mqyVIDs5jNjGLT-G8pUaRATzHWGFUgpdJRq8/edit#gid=0)
 
+
+## Android Forensics
+
+https://github.com/cugu/awesome-forensics
+
+## Xamarin extract XALZ
+https://github.com/x41sec/tools/blob/master/Mobile/Xamarin/Xamarin_XALZ_decompress.py
+
+## Apk signer
+
+Recomended : https://github.com/patrickfav/uber-apk-signer 
+
+## Hook str equals
+
+```js
+Java.perform(function() {
+
+    var str = Java.use('java.lang.String');
+
+    str.equals.overload('java.lang.Object').implementation = function(obj) {
+        var response = str.equals.overload('java.lang.Object').call(this, obj);
+        if (obj) {
+            if (obj.toString().length > 10) {
+
+                send("Is " + str.toString.call(this) + " == " + obj.toString() + "? " + response);
+            }
+        }
+        return response;
+    }
+
+});
+```
+
+## Check APK name
+
+## Check APK minimum version
+
+```
+aapt list -a package.apk | grep SdkVersion
+```
+
+
 ## Jni trace
 https://github.com/chame1eon/jnitrace
 
