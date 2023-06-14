@@ -4,6 +4,10 @@ Android Protection Bypass Stuff that I compiled from few resources.
 ## References 
 [JNI Struct Table](https://docs.google.com/spreadsheets/d/1yqjFaY7mqyVIDs5jNjGLT-G8pUaRATzHWGFUgpdJRq8/edit#gid=0)
 
+## Jni trace
+https://github.com/chame1eon/jnitrace
+
+
 ## Get application pid
 
 ```
