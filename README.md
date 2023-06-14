@@ -7,6 +7,9 @@ Android Protection Bypass Stuff that I compiled from few resources.
 ## Jni trace
 https://github.com/chame1eon/jnitrace
 
+## Convert Android Version
+
+https://github.com/mathieures/convert-apk/
 
 ## Get application pid
 
