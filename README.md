@@ -512,3 +512,12 @@ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 
 - https://github.com/lasting-yang/frida_hook_libart
 
+## Developer mode bypass
+
+https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/
+
+## APK Multi join
+
+https://github.com/maulvialf/patch-apk-windows/ (modified from below)
+https://github.com/NickstaDB/patch-apk/
+https://github.com/REAndroid/APKEditor
