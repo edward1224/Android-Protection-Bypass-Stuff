@@ -518,6 +518,6 @@ https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/
 
 ## APK Multi join
 
-https://github.com/maulvialf/patch-apk-windows/ (modified from below)
-https://github.com/NickstaDB/patch-apk/
-https://github.com/REAndroid/APKEditor
+- https://github.com/maulvialf/patch-apk-windows/ (modified from below)
+- https://github.com/NickstaDB/patch-apk/
+- https://github.com/REAndroid/APKEditor
