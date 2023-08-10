@@ -521,3 +521,8 @@ https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/
 - https://github.com/maulvialf/patch-apk-windows/ (modified from below)
 - https://github.com/NickstaDB/patch-apk/
 - https://github.com/REAndroid/APKEditor
+
+
+## Zygisk Frida
+
+https://github.com/lico-n/ZygiskFrida
