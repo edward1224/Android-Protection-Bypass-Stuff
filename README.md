@@ -545,3 +545,17 @@ https://github.com/hluwa/ZenTracer
 ## Frida Script 
 
 https://github.com/0xdea/frida-scripts
+
+
+## Frida Unpack
+
+https://github.com/dstmath/frida-unpack
+
+## Frida Lib
+
+https://github.com/4ch12dy/FridaLib
+
+## Frida Il2cpp Bridge
+
+https://github.com/vfsfitvnm/frida-il2cpp-bridge
+
