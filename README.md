@@ -526,3 +526,22 @@ https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/
 ## Zygisk Frida
 
 https://github.com/lico-n/ZygiskFrida
+
+
+## Articles I found useful when learning frida
+
+- [](https://link-url-here.org)
+
+## JNI Frida Hook
+
+https://github.com/Areizen/JNI-Frida-Hook
+
+
+## Zen Tracer
+
+https://github.com/hluwa/ZenTracer
+
+
+## Frida Script 
+
+https://github.com/0xdea/frida-scripts
