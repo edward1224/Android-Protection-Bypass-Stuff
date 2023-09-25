@@ -559,3 +559,7 @@ https://github.com/4ch12dy/FridaLib
 
 https://github.com/vfsfitvnm/frida-il2cpp-bridge
 
+## Root detection apps 
+https://github.com/apkunpacker/MagiskDetection
+
+
