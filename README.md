@@ -562,4 +562,19 @@ https://github.com/vfsfitvnm/frida-il2cpp-bridge
 ## Root detection apps 
 https://github.com/apkunpacker/MagiskDetection
 
+## Object casting frida
+```js
+let class = Java.cast(this.obj, Java.use("javaclass"));
+console.log(class.method())
+```
+
+## Object listing
+```js
+Object.keys(this.obj).forEach((prop)=> console.log(prop));
+```
+
+## Object details
+```js
+console.log(JSON.stringify(this.obj, undefined, 2));
+```
 
