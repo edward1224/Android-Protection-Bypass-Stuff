@@ -4,6 +4,18 @@ Android Protection Bypass Stuff that I compiled from few resources.
 ## References 
 [JNI Struct Table](https://docs.google.com/spreadsheets/d/1yqjFaY7mqyVIDs5jNjGLT-G8pUaRATzHWGFUgpdJRq8/edit#gid=0)
 
+## Select instances
+```js
+    var selfInstance;
+	Java.choose("com.org.alfan.MainActivity" , {
+        onMatch : function(instance){ //This function will be called for every instance found by frida
+              console.log("Found instance: "+instance);
+              selfInstance=instance;
+        },
+        onComplete:function(){}
+    });
+```
+
 
 ## Android Forensics
 
