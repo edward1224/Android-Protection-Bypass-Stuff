@@ -11,3 +11,5 @@ var printBacktrace = function () {
         LOG(android_util_Log.getStackTraceString(java_lang_Exception.$new()));
     });
 };
+// put below function inside class that hooked
+// printBacktrace();
