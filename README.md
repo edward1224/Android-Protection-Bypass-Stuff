@@ -104,8 +104,8 @@ function print_arg(addr) {
 
 ## Interesting Repo
 
-https://github.com/mirfansulaiman/Command-Mobile-Penetration-Testing-Cheatsheet
-https://github.com/apkunpacker/FridaScripts.git
+- https://github.com/mirfansulaiman/Command-Mobile-Penetration-Testing-Cheatsheet
+- https://github.com/apkunpacker/FridaScripts.git
 
 
 ## SSL Pinning bypass
