@@ -16,7 +16,6 @@ Android Protection Bypass Stuff that I compiled from few resources.
     });
 ```
 
-
 ## Android Forensics
 
 https://github.com/cugu/awesome-forensics
@@ -588,5 +587,9 @@ Object.keys(this.obj).forEach((prop)=> console.log(prop));
 ```js
 console.log(JSON.stringify(this.obj, undefined, 2));
 ```
+
+## Flutter
+- https://github.com/ptswarm/reFlutter
+- https://github.com/horangi-cyops/flutter-ssl-pinning-bypass
 
 
