@@ -102,11 +102,10 @@ function print_arg(addr) {
 
 
 
-## Good tools cheatsheet
-
-Good cheatsheet compilation for mobile pentest
+## Interesting Repo
 
 https://github.com/mirfansulaiman/Command-Mobile-Penetration-Testing-Cheatsheet
+https://github.com/apkunpacker/FridaScripts.git
 
 
 ## SSL Pinning bypass
@@ -589,4 +588,5 @@ Object.keys(this.obj).forEach((prop)=> console.log(prop));
 ```js
 console.log(JSON.stringify(this.obj, undefined, 2));
 ```
+
 
