@@ -467,6 +467,10 @@ function aWaitingLoadLibrarys() {
     })
 }
 ```
+## Start adb service
+```
+start adbd
+```
 
 ## ARM strace
 
