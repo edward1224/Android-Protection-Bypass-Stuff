@@ -597,3 +597,5 @@ console.log(JSON.stringify(this.obj, undefined, 2));
 - https://github.com/horangi-cyops/flutter-ssl-pinning-bypass
 
 
+## Trust user certificate
+- https://github.com/fei-ke/TrustUserCerts
