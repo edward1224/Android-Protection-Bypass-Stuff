@@ -605,3 +605,6 @@ console.log(JSON.stringify(this.obj, undefined, 2));
 ```bash
 emulator -avd 'cupcake' -feature -Vulkan
 ```
+
+## Deobfuscator list
+- https://github.com/GraxCode/threadtear
