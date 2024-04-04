@@ -599,3 +599,9 @@ console.log(JSON.stringify(this.obj, undefined, 2));
 
 ## Trust user certificate
 - https://github.com/fei-ke/TrustUserCerts
+
+## AVD with vulkan
+
+```bash
+emulator -avd 'cupcake' -feature -Vulkan
+```
