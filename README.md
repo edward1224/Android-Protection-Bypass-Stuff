@@ -472,6 +472,16 @@ function aWaitingLoadLibrarys() {
 start adbd
 ```
 
+## Convert byte to string
+```js
+        var result = [];
+        var str = ""
+        for (var i = 0; i < result.length; i++) {
+           str += String.fromCharCode(result[i]);
+        }
+
+```
+
 ## ARM strace
 
 https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/arm/strace
