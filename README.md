@@ -626,14 +626,6 @@ emulator -avd 'cupcake' -feature -Vulkan
 adb emu sms send 123 alfan
 ```
 
-## Library location
-
-```
-adb shell pm path com.alfan
-cd /data/app/<path>/comalfan<path>/lib
-```
-
-
 ## Forwarding & reverse
 
 ```
