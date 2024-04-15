@@ -632,3 +632,14 @@ adb emu sms send 123 alfan
 adb shell pm path com.alfan
 cd /data/app/<path>/comalfan<path>/lib
 ```
+
+
+## Forwarding & reverse
+
+```
+adb forward tcp:8080 tcp:8080
+adb reverse tcp:3000 tcp:3000
+adb forward --remove tcp:8080
+adb forward --remove-all
+adb reverse --remove-all
+```
