@@ -619,3 +619,9 @@ emulator -avd 'cupcake' -feature -Vulkan
 
 ## Deobfuscator list
 - https://github.com/GraxCode/threadtear
+
+## send sms
+
+```
+adb emu sms send 123 alfan
+```
