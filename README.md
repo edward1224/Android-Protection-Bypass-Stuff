@@ -639,3 +639,7 @@ adb reverse --remove-all
 ## Reflutter Zygisk
 
 https://github.com/yohanes/zygisk-reflutter/
+
+## Single native lib location module
+    
+/data/app/~~<base64>/com-alfan-<random>/base.apk
