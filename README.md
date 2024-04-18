@@ -1,13 +1,16 @@
 # Android Protection Bypass Stuff
+
 Android Protection Bypass Stuff that I compiled from few resources.
 
-## References 
+## References
+
 [JNI Struct Table](https://docs.google.com/spreadsheets/d/1yqjFaY7mqyVIDs5jNjGLT-G8pUaRATzHWGFUgpdJRq8/edit#gid=0)
 
 ## Select instances
+
 ```js
     var selfInstance;
-	Java.choose("com.org.alfan.MainActivity" , {
+ Java.choose("com.org.alfan.MainActivity" , {
         onMatch : function(instance){ //This function will be called for every instance found by frida
               console.log("Found instance: "+instance);
               selfInstance=instance;
@@ -18,14 +21,15 @@ Android Protection Bypass Stuff that I compiled from few resources.
 
 ## Android Forensics
 
-https://github.com/cugu/awesome-forensics
+<https://github.com/cugu/awesome-forensics>
 
 ## Xamarin extract XALZ
-https://github.com/x41sec/tools/blob/master/Mobile/Xamarin/Xamarin_XALZ_decompress.py
+
+<https://github.com/x41sec/tools/blob/master/Mobile/Xamarin/Xamarin_XALZ_decompress.py>
 
 ## Apk signer
 
-Recomended : https://github.com/patrickfav/uber-apk-signer 
+Recomended : <https://github.com/patrickfav/uber-apk-signer>
 
 ## Hook str equals
 
@@ -52,35 +56,38 @@ Java.perform(function() {
 
 ## Check APK minimum version
 
-```
+```bash
 aapt list -a package.apk | grep SdkVersion
+aapt list -a package.apk | findstr SdkVersion
 ```
-
 
 ## Jni trace
-https://github.com/chame1eon/jnitrace
+
+<https://github.com/chame1eon/jnitrace>
 
 ## Convert Android Version
 
-https://github.com/mathieures/convert-apk/
+<https://github.com/mathieures/convert-apk/>
 
 ## Get application pid
 
-```
+```bash
 pidof com.alfan.apps
 ```
 
 ## Get strace
-```
+
+```bash
 strace -p <PID>
 ```
 
 ## Get mapping
-```
+
+```bash
 cat /proc/<pid>/maps  | grep blabla.so
 ```
 
-## Inspect address 
+## Inspect address
 
 ```js
 
@@ -99,58 +106,52 @@ function print_arg(addr) {
 }
 ```
 
-
-
 ## Interesting Repo
 
-- https://github.com/mirfansulaiman/Command-Mobile-Penetration-Testing-Cheatsheet
-- https://github.com/apkunpacker/FridaScripts.git
-
+- <https://github.com/mirfansulaiman/Command-Mobile-Penetration-Testing-Cheatsheet>
+- <https://github.com/apkunpacker/FridaScripts.git>
 
 ## SSL Pinning bypass
 
 Most completed SSL pinning bypass
 
-https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/
-
+<https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/>
 
 ## Encryption AES or ETC
 
 Can relied on this
 
-https://codeshare.frida.re/@dzonerzy/aesinfo/
+<https://codeshare.frida.re/@dzonerzy/aesinfo/>
 
 Modified to view raw string instead of hex
 
-https://raw.githubusercontent.com/maulvialf/Android-Protection-Bypass-Stuff/main/aesinfo.js
-
+<https://raw.githubusercontent.com/maulvialf/Android-Protection-Bypass-Stuff/main/aesinfo.js>
 
 ## Magisk Alpha
 
 Main magisk released now did not had magiskhide feature. However this feature is exist on magisk alpha (Use this on pentest environtment devices only)
 
-https://t.me/magiskalpha
-
+<https://t.me/magiskalpha>
 
 ## Frida detection bypass
 
 Use this frida. Make sure version used same with frida cli version that exist on ur machine
 
-https://github.com/CrackerCat/strongR-frida-android
+<https://github.com/CrackerCat/strongR-frida-android>
 
 ## APK decompiler
 
 Mainly use jadx gui. Had amazing feature copy as frida snippet or xposed snippet. Fast string search and decompiler speed.
 
-https://github.com/skylot/jadx
+<https://github.com/skylot/jadx>
 
 If APK did not decompiled well with jadx gui, use bytecode-viewer as alternative. Bytecode-Viewer had many decompiler tools inside.
 
-https://github.com/Konloch/bytecode-viewer
+<https://github.com/Konloch/bytecode-viewer>
 
 ## Hook runtime dex
 
-I write article for this on CTF writeup here - https://maulvialf.medium.com/write-up-intechctf-android-game-3024629af286. TLDR script on below
+I write article for this on CTF writeup here - <https://maulvialf.medium.com/write-up-intechctf-android-game-3024629af286>. TLDR script on below
 
 ```javascript
 Java.perform(function () {
@@ -180,19 +181,19 @@ Java.perform(function () {
 
 Use this, and you would get dex files from packer
 
-https://github.com/enovella/fridroid-unpacker.git
+<https://github.com/enovella/fridroid-unpacker.git>
 
 ## Library dumper
 
 Use this to dump library from memory and fixing broken memory
 
-https://github.com/lasting-yang/frida_dump
+<https://github.com/lasting-yang/frida_dump>
 
 ## Flutter SSL Pinning bypass
 
 Self explanatory
 
-https://github.com/Impact-I/reFlutter
+<https://github.com/Impact-I/reFlutter>
 
 ## Hook native lib with function name
 
@@ -280,25 +281,23 @@ function hookFunctions() {
 };
 ```
 
-
 ## APKLab
 
 Vscode extension that make patching smali easy
 
-https://github.com/APKLab/APKLab
+<https://github.com/APKLab/APKLab>
 
 ## IDA Frida
 
 Wanna export frida script on native binary? use this
 
-https://github.com/P4nda0s/IDAFrida
-
+<https://github.com/P4nda0s/IDAFrida>
 
 ## Frida Typescript
 
 Wanna use code completion on writing frida scripts. Use typescripts
 
-https://github.com/oleavr/frida-agent-example.git
+<https://github.com/oleavr/frida-agent-example.git>
 
 ## Useful magisk module that used zygisk
 
@@ -306,53 +305,49 @@ https://github.com/oleavr/frida-agent-example.git
 
 Game code dumper
 
-https://github.com/Perfare/Zygisk-Il2CppDumper
+<https://github.com/Perfare/Zygisk-Il2CppDumper>
 
 ### Shamiko
 
 Used for magisk hide replacement. Hide some root detection
 
-https://github.com/LSPosed/LSPosed.github.io/releases
-
+<https://github.com/LSPosed/LSPosed.github.io/releases>
 
 ## Automatic scanner
 
-https://github.com/MobSF/Mobile-Security-Framework-MobSF
-
+<https://github.com/MobSF/Mobile-Security-Framework-MobSF>
 
 ## Objection
 
 Metasploit like for frida
 
-https://github.com/sensepost/objection
-
+<https://github.com/sensepost/objection>
 
 ## Webbased Frida GUI
 
-https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security
+<https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security>
 
-https://github.com/nccgroup/house
+<https://github.com/nccgroup/house>
 
 ## Monitor Intent & Activity
 
-https://gist.github.com/bet4it/b62ac2d5bd45b8cb699905fa498baf5e
+<https://gist.github.com/bet4it/b62ac2d5bd45b8cb699905fa498baf5e>
 
-## IDA JNI header 
+## IDA JNI header
 
-https://gist.github.com/Jinmo/048776db75067dcd6c57f1154e65b868
+<https://gist.github.com/Jinmo/048776db75067dcd6c57f1154e65b868>
 
 ## GDB Server
 
-https://github.com/kruglinski/gdbserver.git
+<https://github.com/kruglinski/gdbserver.git>
 
-https://gist.github.com/sekkr1/6adf2741ed3bc741b53ab276d35fd047
-
+<https://gist.github.com/sekkr1/6adf2741ed3bc741b53ab276d35fd047>
 
 ## Anti Frida bypass script
 
-https://github.com/apkunpacker/AntiFrida_Bypass/blob/main/AntiAntiFrida.js
+<https://github.com/apkunpacker/AntiFrida_Bypass/blob/main/AntiAntiFrida.js>
 
-## Wait native library loaded 
+## Wait native library loaded
 
 ```js
 // frida  -U -f  id.aimardcr.insecure_jni -l solve.js
@@ -467,12 +462,15 @@ function aWaitingLoadLibrarys() {
     })
 }
 ```
+
 ## Start adb service
-```
+
+```bash
 start adbd
 ```
 
 ## Convert byte to string
+
 ```js
         var result = [];
         var str = ""
@@ -484,7 +482,7 @@ start adbd
 
 ## ARM strace
 
-https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/arm/strace
+<https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/arm/strace>
 
 ## Patch memory
 
@@ -528,30 +526,28 @@ Interceptor.attach(unlink, {
 
 ## Disable ASLR
 
-```
+```bash
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 ```
 
 ## Tools
 
-- https://github.com/lasting-yang/frida_hook_libart
-- https://github.com/cryptax/droidlysis
+- <https://github.com/lasting-yang/frida_hook_libart>
+- <https://github.com/cryptax/droidlysis>
 
 ## Developer mode bypass
 
-https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/
+<https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/>
 
 ## APK Multi join
 
-- https://github.com/maulvialf/patch-apk-windows/ (modified from below)
-- https://github.com/NickstaDB/patch-apk/
-- https://github.com/REAndroid/APKEditor
-
+- <https://github.com/maulvialf/patch-apk-windows/> (modified from below)
+- <https://github.com/NickstaDB/patch-apk/>
+- <https://github.com/REAndroid/APKEditor>
 
 ## Zygisk Frida
 
-https://github.com/lico-n/ZygiskFrida
-
+<https://github.com/lico-n/ZygiskFrida>
 
 ## Articles I found useful when learning frida
 
@@ -559,57 +555,59 @@ https://github.com/lico-n/ZygiskFrida
 
 ## JNI Frida Hook
 
-https://github.com/Areizen/JNI-Frida-Hook
-
+<https://github.com/Areizen/JNI-Frida-Hook>
 
 ## Zen Tracer
 
-https://github.com/hluwa/ZenTracer
+<https://github.com/hluwa/ZenTracer>
 
+## Frida Script
 
-## Frida Script 
-
-https://github.com/0xdea/frida-scripts
-
+<https://github.com/0xdea/frida-scripts>
 
 ## Frida Unpack
 
-https://github.com/dstmath/frida-unpack
+<https://github.com/dstmath/frida-unpack>
 
 ## Frida Lib
 
-https://github.com/4ch12dy/FridaLib
+<https://github.com/4ch12dy/FridaLib>
 
 ## Frida Il2cpp Bridge
 
-https://github.com/vfsfitvnm/frida-il2cpp-bridge
+<https://github.com/vfsfitvnm/frida-il2cpp-bridge>
 
-## Root detection apps 
-https://github.com/apkunpacker/MagiskDetection
+## Root detection apps
+
+<https://github.com/apkunpacker/MagiskDetection>
 
 ## Object casting frida
+
 ```js
 let class = Java.cast(this.obj, Java.use("javaclass"));
 console.log(class.method())
 ```
 
 ## Object listing
+
 ```js
 Object.keys(this.obj).forEach((prop)=> console.log(prop));
 ```
 
 ## Object details
+
 ```js
 console.log(JSON.stringify(this.obj, undefined, 2));
 ```
 
 ## Flutter
-- https://github.com/ptswarm/reFlutter
-- https://github.com/horangi-cyops/flutter-ssl-pinning-bypass
 
+- <https://github.com/ptswarm/reFlutter>
+- <https://github.com/horangi-cyops/flutter-ssl-pinning-bypass>
 
 ## Trust user certificate
-- https://github.com/fei-ke/TrustUserCerts
+
+- <https://github.com/fei-ke/TrustUserCerts>
 
 ## AVD with vulkan
 
@@ -618,17 +616,18 @@ emulator -avd 'cupcake' -feature -Vulkan
 ```
 
 ## Deobfuscator list
-- https://github.com/GraxCode/threadtear
+
+- <https://github.com/GraxCode/threadtear>
 
 ## send sms
 
-```
+```bash
 adb emu sms send 123 alfan
 ```
 
 ## Forwarding & reverse
 
-```
+```bash
 adb forward tcp:8080 tcp:8080
 adb reverse tcp:3000 tcp:3000
 adb forward --remove tcp:8080
@@ -638,8 +637,10 @@ adb reverse --remove-all
 
 ## Reflutter Zygisk
 
-https://github.com/yohanes/zygisk-reflutter/
+<https://github.com/yohanes/zygisk-reflutter/>
 
 ## Single native lib location module
-    
+
+```bash
 /data/app/~~<base64>/com-alfan-<random>/base.apk
+```
