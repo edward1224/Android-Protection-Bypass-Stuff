@@ -644,3 +644,15 @@ adb reverse --remove-all
 ```bash
 /data/app/~~<base64>/com-alfan-<random>/base.apk
 ```
+
+## Beautify code
+
+```js
+console.log(JSON.stringify(message, null, 4));
+```
+
+##  NDK Builder location
+
+```
+C:\Users\%USERNAME%\AppData\Local\Android\Sdk\ndk\VERSION
+```
