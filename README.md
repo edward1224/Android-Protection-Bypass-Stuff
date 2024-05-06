@@ -139,6 +139,8 @@ Use this frida. Make sure version used same with frida cli version that exist on
 
 <https://github.com/CrackerCat/strongR-frida-android>
 
+<https://github.com/hzzheyang/strongR-frida-android>
+
 ## APK decompiler
 
 Mainly use jadx gui. Had amazing feature copy as frida snippet or xposed snippet. Fast string search and decompiler speed.
