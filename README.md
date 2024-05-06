@@ -551,7 +551,7 @@ echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 
 ## Articles I found useful when learning frida
 
-- [](https://link-url-here.org)
+- <https://github.com/r0ysue/FridaAndrioidNativeBeginnersBook>
 
 ## JNI Frida Hook
 
@@ -656,3 +656,14 @@ console.log(JSON.stringify(message, null, 4));
 ```
 C:\Users\%USERNAME%\AppData\Local\Android\Sdk\ndk\VERSION
 ```
+
+## Traffic Dump
+
+<https://github.com/r0ysue/r0capture>
+
+## Native Emu
+
+
+https://github.com/maiyao1988/ExAndroidNativeEmu
+
+https://github.com/AeonLucid/AndroidNativeEmu
